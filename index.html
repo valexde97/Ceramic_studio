@@ -7,48 +7,59 @@
     <meta name="author" content="Awesome student" />
     <title>Ceramic soul</title>
     <link rel="icon" type="image/x-icon" href="/Ceramic_studio/assets/favicon-A_W1hML8.ico" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Ceramic_studio/assets/main-BBO1oVlr.js"></script>
-    <link rel="stylesheet" crossorigin href="/Ceramic_studio/assets/main-Thf-5JKU.css">
+    <script type="module" crossorigin src="/Ceramic_studio/assets/main-Be4xA0YK.js"></script>
+    <link rel="stylesheet" crossorigin href="/Ceramic_studio/assets/main-DcpkrEU0.css">
   </head>
   <body>
     <section class="promo">
       <img src="/Ceramic_studio/assets/potter-Dgq44G72.jpg" alt="potter" class="promo__potter" />
       <div class="container">
-        <div class="header">
+        <header class="header">
+          <div class="header__menu header__menu_active">
+            <div class="header__menu-close">
+              <span></span>
+              <span></span>
+            </div>
+            <nav class="header__menu-nav">
+              <ul>
+                <li><a href="#" class="header__menu-link">catalog</a></li>
+                <li><a href="#" class="header__menu-link">blog</a></li>
+                <li><a href="#" class="header__menu-link">about</a></li>
+              </ul>
+            </nav>
+          </div>
           <div class="header__top">
             <div class="burger"><span></span><span></span><span></span></div>
             <a href="#" class="header__logo"
-              ><img src="/Ceramic_studio/assets/logo-CiQoG76i.png" alt=""
+              ><img src="/Ceramic_studio/assets/logo-CiQoG76i.png" alt="logo"
             /></a>
             <div class="header__icons">
               <a href="#"><span class="icon-search"></span></a>
               <a href="#"><span class="icon-shopping-bag"></span></a>
             </div>
           </div>
-          <ul class="header__nav">
+          <nav class="header__nav">
             <ul>
               <li><a href="#" class="header__link">catalog</a></li>
               <li><a href="#" class="header__link">blog</a></li>
               <li><a href="#" class="header__link">about</a></li>
             </ul>
-          </ul>
-        </div>
+          </nav>
+        </header>
         <div class="promo__wrapper">
           <h1 class="title-h1-italic promo__title">
-            Make your dream come true <br />
-            or decorate your home
+            Make your dream come true<br />or decorate your home
           </h1>
           <div class="promo__cta">
             <img
               src="/Ceramic_studio/assets/ceramic-vase-C84EBEm2.jpg"
-              alt="ceramic-vase"
+              alt="vase"
               class="promo__img"
             />
             <button class="btn-default promo__btn">shop now</button>
@@ -57,16 +68,16 @@
       </div>
     </section>
 
-    <sectiom class="activities">
+    <section class="activities">
       <div class="container">
         <h2 class="title-h2">create or buy</h2>
         <div class="pure-g activities__wrapper">
-          <div class="pure-u-1 pure-u-lg-2-5 activities__col">
+          <div class="pure-u-1 pure-u-xl-2-5 activities__col">
             <h3 class="title-h3">our store</h3>
             <img
-              class="activities__img"
               src="/Ceramic_studio/assets/store-CVtOxCsN.jpg"
               alt="store"
+              class="activities__img"
             />
             <p class="activities__text">
               Welcome to
@@ -79,13 +90,12 @@
               authenticity to any space.
             </p>
           </div>
-
-          <div class="pure-u-1 pure-u-lg-3-5 activities__col">
+          <div class="pure-u-1 pure-u-xl-3-5 activities__col">
             <h3 class="title-h3">our workshop</h3>
             <img
-              class="activities__img"
               src="/Ceramic_studio/assets/ceramic-Bgx1feVJ.jpg"
               alt="ceramic"
+              class="activities__img"
             />
             <p class="activities__text activities__text_fixed">
               At
@@ -99,7 +109,8 @@
           </div>
         </div>
       </div>
-    </sectiom>
+    </section>
+
     <section class="touch">
       <div class="container">
         <h2 class="title-h2">get in touch</h2>
@@ -141,6 +152,7 @@
                 placeholder="Question"
                 required
               ></textarea>
+
               <label class="touch__label touch__check-block" for="checkbox">
                 <input
                   required
@@ -148,20 +160,17 @@
                   type="checkbox"
                   id="checkbox"
                 />
-                I agree with terms <a href="#">terms</a></label
+                I agree with the <a href="#">terms</a></label
               >
+
               <button class="btn-send touch__btn">send request</button>
             </form>
           </div>
-          <img
-            class="touch__decor"
-            src="/Ceramic_studio/assets/vase-vlRwx0nf.png"
-            alt="vase"
-            class="touch__decor"
-          />
         </div>
+				<img src="/Ceramic_studio/assets/vase-vlRwx0nf.png" alt="vase" class="touch__decor" />
       </div>
     </section>
+
     <section class="works">
       <div class="container">
         <h2 class="title-h2">check out our works</h2>
@@ -179,78 +188,97 @@
                 <img src="/Ceramic_studio/assets/tea-3-ILJqlmY_.jpg" alt="tea-3" />
               </div>
               <div class="swiper-slide">
-                <img src="/Ceramic_studio/assets/tea-3-ILJqlmY_.jpg" alt="tea-2" />
+                <img src="/Ceramic_studio/assets/tea-2-CiZGhhkc.jpg" alt="tea-2" />
               </div>
             </div>
-
-            <!-- <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
           </div>
           <div class="swiper-pagination"></div>
-          <span class="icon-left-open works__slider-nav"></span>
-          <span class="icon-right-open works__slider-nav"></span>
+          <button class="icon-left-open works__slider-nav"></button>
+          <button class="icon-right-open works__slider-nav"></button>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer__wrapper__whole">
-      <div class="footer__news">
-        <h2 class="title-h2">newsletter</h2>
-        <p class="footer__paragraf">Keep up to date with news and promotions</p>
-        <div class="footer__inputblock">
-          <input
-          class="footer__label"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-          />
-          <label class="footer__check-block" for="checkbox">
-            <input
-            required
-            class="footer__checkbox"
-            type="checkbox"
-            id="checkbox"
-            />
-            I agree with terms <a href="#">terms</a></label
-            ></div>
-            <button class="footer__btn">submit</button>
-          </div>
-          <div class="footer__wrapper">
-          <div class="footer__nav">
-            <div class="footer__discover">
-              <h2>discover</h2>
-           <a href="#"> <span>About Us</span></a>
-          <a href="#">  <span id="discover__blog">Blog</span></a>
 
+    <footer class="footer footer_spaced">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__newsletter">
+            <h2 class="footer__header">newsletter</h2>
+            <div class="footer__text footer__text_spaced">
+              Keep up to date with news and promotions
+            </div>
+            <form action="#" class="footer__form">
+              <input
+                placeholder="Enter your e-mail"
+                type="email"
+                class="footer__input"
+                required
+              />
+              <label class="footer__check-block" for="footer__checkbox">
+                <input
+                  required
+                  class="footer__checkbox"
+                  type="checkbox"
+                  id="footer__checkbox"
+                />
+                I agree with the <a href="#">terms</a></label
+              >
+              <button class="btn-submit footer__form-btn">submit</button>
+            </form>
           </div>
-          <div class="footer__shopping">
-            <h2>shopping</h2>
-           <a href="#"><span>Catalog</span></a> 
+          <div class="footer__links">
+            <div class="footer__links-block">
+              <h2 class="footer__header">discover</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li class="footer__link"><a href="#">About Us</a></li>
+                  <li class="footer__link"><a href="#">Blog</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__links-block">
+              <h2 class="footer__header">shopping</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li class="footer__link"><a href="#">Catalog</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__links-block">
+              <h2 class="footer__header">information</h2>
+              <nav class="footer__nav">
+                <ul>
+                  <li class="footer__link">
+                    <a href="#">Terms and Conditions</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="footer__information">
-            <h2>information</h2>
-            <a href="#"><span>Terms and Conditions</span></a>
+          <div class="footer__social">
+            <h2 class="footer__header">follow us</h2>
+            <ul class="footer__social-block">
+              <li>
+                <a href="https://www.facebook.com/">
+                  <span class="icon-facebook"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <span class="icon-instagram"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/">
+                  <span class="icon-pinterest-circled"></span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="footer__follow">
-          <h2>follow us</h2>
-          <div class="footer__icons">
-          <a href="#">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADkSURBVHgBrZWBEYIwDABTJ2AD2UBHcISOwAhsgBvABo4gI7iBOEFxAkeIicjZ6yVtBf4ud1yTPqTQAiCAiAVFTXGlcPjj/h2rIBcqthQvTOOSYipo8X8aTdbgctpQViUmdBRlMCfE+kkXkV2UjkJ43YucpztmCpl6RzkLEYwxg9SJUn5i4R7yKRP5g4ncbX5CM1+naj/1WpEvktDmcctP2I6RhQNsx4OFNykjvU3/+1CE/XyyqIeBJhRwfqHdQFiFLXYrhGdxATixQNhBDJz2tssQ8rpHt60k7oOxkcdw+j0U0rw3NYSyzn3hJdkAAAAASUVORK5CYII=" alt="" />
-          </a>
-          <a href="#">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEZSURBVHgBrZSBjcIwDEWtmyAjdISO0FG6wXWDZpN2A0bgbgK6QdkANjA2/UYRsqFBfMlqcNyX2C4mgpg5iY1iK+/XSWwSa6iUOipBz1of0CfYQayjnZLYVmwuoIkKx0QV0oPFet5KdQAjE+qgaiuBltUA+P2WZEV4cYuj2AVhuu6xN8Pf4vfGiYC8dTzS6MTHQNTGlFGnhPRMXQ3waPVxbpIt/RqgKTnAhL2L984P+brSeyXPGQEXPAdnr8fz330zSLkr0h6KpoyFv3c5HhABmWPl8GIREEH6+fxZE7DugtgH8Iy1G7hHvA0J1UmbMsP/S5/LmrfYd7XihIkrhgSaZ5NGGY1tNPytAVucplCdIEsFSOt//68b5wYwxhCxlC6VjAAAAABJRU5ErkJggg==" alt="" />
-          </a>
-          <a href="#">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFLSURBVHgBlVQBdYNADD2q4BwMB6sEJCDhJNQBOCgO2ikYU9BNAXWQTsHmIEvWXBvyctDmvbzjJT/JzwcuBMcQMZIn8ndywLtNEkvhUSNwS/6D6warjQmwx+etKzXrCgUX8lH8s4DZ22bJAbFWjTO4Ju8dfKtBYJK9yjXSoNdF9LzFudb8HD12B8VkcpgA5wSzM7nEwdEEa8OadTsazEkx1SzHYFiAWvPGVmKlwXoYbCi2VZp/y5ljH6FstRfbmMCLnL9yRpV7NVgP80/5YlaJ4qxNL5jGYEDVa8kmZng2k7uqqnj6l8o1BvMmzViauWTof9QHYVjnQry/9UGxO5m6FNR6uLBWbhzzKUNdfL5hrI1KP8DrR8zbDAUCyb6cwQB2Ej/iuvXBM5z/9ElisNJsCEsma4GcaaERr92GRw2vwrMMZ9Uk3408KHp1fyCPrYhEM673AAAAAElFTkSuQmCC" alt="" />
-          </a>
-          </div>
-        </div>
+        <div class="footer__copyright">© Copyright 2025, Ceramic soul</div>
       </div>
-      </div>
-        <p class="footer__copy">© Copyright 2025, Ceramic soul</p>
     </footer>
+
   </body>
 </html>
