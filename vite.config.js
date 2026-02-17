@@ -5,11 +5,12 @@ import { defineConfig } from "vite";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-	build: {
-		rollupOptions: {
-			input: {
-				main: resolve(__dirname, "index.html"),
-			},
-		},
-	},
+  base: "/Ceramic_studio/",
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+      },
+    },
+  },
 });
