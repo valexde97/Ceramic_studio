@@ -1,0 +1,140 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.about {
+  &__wrapper {
+    margin-top: 60px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $dark;
+  }
+  &__title-h2 {
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: $dark;
+    margin-top: 59px;
+  }
+  &__text {
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $dark;
+  }
+  &__img {
+    display: none;
+  }
+  &__form {
+    margin-top: 60px;
+  }
+  &__vase {
+    display: none;
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 120px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .about {
+    position: relative;
+    &__wrapper {
+      margin-top: 58px;
+      padding: 0 24px 0 24px;
+      justify-content: center;
+      position: relative;
+    }
+    &__img_crafts {
+      width: 600px;
+    }
+    &__form {
+      width: 300px;
+    }
+    &__vase {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    &__card {
+      flex-direction: row;
+      gap: 20px;
+      align-items: end;
+    }
+    &__wrapper {
+      margin-top: 60px;
+      padding: 0 30px 0 30px;
+    }
+    &__img_crafts {
+      width: 550px;
+    }
+    &__title {
+      font-size: 40px;
+    }
+    &__title-h2 {
+      font-size: 40px;
+    }
+    &__img {
+      display: block;
+      width: 550px;
+      height: 341px;
+    }
+    &__git_container {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      gap: 40px;
+    }
+    &__form {
+      height: 428px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .about {
+    &__text {
+      margin: 0;
+      font-weight: 400;
+      font-size: 20px;
+      color: $dark;
+    }
+    &__img_crafts {
+      width: 700px;
+      height: 481px;
+    }
+    &__card {
+      margin-top: 100px;
+      align-items: start;
+    }
+    &__title-h2 {
+      margin-top: 100px;
+    }
+    &__img {
+      width: 573px;
+      height: 356px;
+    }
+  }
+}

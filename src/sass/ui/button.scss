@@ -21,6 +21,16 @@
     border: 1px solid $ui-disabled;
   }
 }
+.btn-read {
+  @include button;
+  width: 145px;
+  height: 32px;
+  font-size: 14px;
+  &:focus {
+    outline: 1px solid $ceramic;
+    border: 1px solid $ceramic;
+  }
+}
 @media screen and (min-width: 1200px) {
   .btn-default {
     &:hover {
@@ -35,6 +45,16 @@
     }
   }
   .btn-send {
+    &:active {
+      outline: 1px solid $ceramic;
+      border: 1px solid $ceramic;
+    }
+    &:hover {
+      color: $ceramic;
+      border: 1px solid $ceramic;
+    }
+  }
+  .btn-read {
     &:active {
       outline: 1px solid $ceramic;
       border: 1px solid $ceramic;

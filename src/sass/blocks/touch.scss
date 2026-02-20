@@ -1,6 +1,10 @@
 @use "/src/sass/base/variables.scss" as *;
 .touch {
   padding-top: 60px;
+  .just-validate-error-field{
+     border: none;
+      outline: 1px solid $ui-error;
+  }
   &__form {
     width: 340px;
   }
@@ -93,6 +97,7 @@ position: relative;
 }
 @media screen and (min-width: 768px) {
   .touch {
+    position: relative;
     &__decor {
       display: block;
     }
@@ -128,12 +133,15 @@ position: relative;
         border: none;
         outline: 1px solid $dark;
       }
-      &__form {
-        padding-left: 20px;
-      }
     }
+    &__form {
+      padding-left: 20px;
+    }
+  
   }
 }
+
+
 @media screen and (min-width: 1920px) {
   .touch {
     padding-top: 100px;

@@ -62,6 +62,21 @@
     &__title {
       padding-left: 41.6875rem;
     }
+    &__cta{
+      animation-name: slideIn;
+      animation-duration: 3s;
+    }
+  }
+}
+
+@keyframes slideIn {
+  0%{
+transform: translateX(100%);
+  }
+ 
+  100%{
+transform: translateX(0%);
+
   }
 }
 
