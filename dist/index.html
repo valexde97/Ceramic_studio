@@ -13,30 +13,34 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Ceramic_studio/assets/main-Be4xA0YK.js"></script>
-    <link rel="stylesheet" crossorigin href="/Ceramic_studio/assets/main-DcpkrEU0.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script type="module" crossorigin src="/Ceramic_studio/assets/script-BgOPMXMz.js"></script>
+    <link rel="stylesheet" crossorigin href="/Ceramic_studio/assets/script-PVE9ygsf.css">
   </head>
   <body>
     <section class="promo">
       <img src="/Ceramic_studio/assets/potter-Dgq44G72.jpg" alt="potter" class="promo__potter" />
       <div class="container">
         <header class="header">
-          <div class="header__menu header__menu_active">
+          <div class="header__menu">
             <div class="header__menu-close">
               <span></span>
               <span></span>
             </div>
             <nav class="header__menu-nav">
               <ul>
-                <li><a href="#" class="header__menu-link">catalog</a></li>
-                <li><a href="#" class="header__menu-link">blog</a></li>
-                <li><a href="#" class="header__menu-link">about</a></li>
-              </ul>
+              <li><a href="/Ceramic_studio/catalog" class="header__menu-link">catalog</a></li>
+              <li><a href="/Ceramic_studio/blog" class="header__menu-link">blog</a></li>
+              <li><a href="/Ceramic_studio/about" class="header__menu-link">about</a></li>
+            </ul>
             </nav>
           </div>
           <div class="header__top">
             <div class="burger"><span></span><span></span><span></span></div>
-            <a href="#" class="header__logo"
+            <a href="/Ceramic_studio/" class="header__logo"
               ><img src="/Ceramic_studio/assets/logo-CiQoG76i.png" alt="logo"
             /></a>
             <div class="header__icons">
@@ -46,9 +50,9 @@
           </div>
           <nav class="header__nav">
             <ul>
-              <li><a href="#" class="header__link">catalog</a></li>
-              <li><a href="#" class="header__link">blog</a></li>
-              <li><a href="#" class="header__link">about</a></li>
+              <li><a href="/Ceramic_studio/catalog" class="header__link">catalog</a></li>
+              <li><a href="/Ceramic_studio/blog" class="header__link">blog</a></li>
+              <li><a href="/Ceramic_studio/about" class="header__link">about</a></li>
             </ul>
           </nav>
         </header>
@@ -152,7 +156,7 @@
                 placeholder="Question"
                 required
               ></textarea>
-
+              <div class="error-message"></div>
               <label class="touch__label touch__check-block" for="checkbox">
                 <input
                   required
@@ -162,12 +166,13 @@
                 />
                 I agree with the <a href="#">terms</a></label
               >
+              <div class="checkbox-error-message"></div>
 
               <button class="btn-send touch__btn">send request</button>
             </form>
           </div>
         </div>
-				<img src="/Ceramic_studio/assets/vase-vlRwx0nf.png" alt="vase" class="touch__decor" />
+        <img src="/Ceramic_studio/assets/vase-vlRwx0nf.png" alt="vase" class=" touch__decor" />
       </div>
     </section>
 
@@ -212,6 +217,7 @@
                 placeholder="Enter your e-mail"
                 type="email"
                 class="footer__input"
+                id="footer__email"
                 required
               />
               <label class="footer__check-block" for="footer__checkbox">
@@ -231,8 +237,8 @@
               <h2 class="footer__header">discover</h2>
               <nav class="footer__nav">
                 <ul>
-                  <li class="footer__link"><a href="#">About Us</a></li>
-                  <li class="footer__link"><a href="#">Blog</a></li>
+                  <li class="footer__link"><a href="/Ceramic_studio/about">About Us</a></li>
+                  <li class="footer__link"><a href="/Ceramic_studio/blog">Blog</a></li>
                 </ul>
               </nav>
             </div>
@@ -240,7 +246,7 @@
               <h2 class="footer__header">shopping</h2>
               <nav class="footer__nav">
                 <ul>
-                  <li class="footer__link"><a href="#">Catalog</a></li>
+                  <li class="footer__link"><a href="/Ceramic_studio/catalog">Catalog</a></li>
                 </ul>
               </nav>
             </div>

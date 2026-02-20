@@ -1,9 +1,9 @@
 @use "/src/sass/base/variables.scss" as *;
 .touch {
   padding-top: 60px;
-  .just-validate-error-field{
-     border: none;
-      outline: 1px solid $ui-error;
+  .just-validate-error-field {
+    border: none;
+    outline: 1px solid $ui-error;
   }
   &__form {
     width: 340px;
@@ -12,43 +12,43 @@
   &__wrapper {
     display: flex;
     margin-top: 60px;
-position: relative;
-}
-&__img {
-  display: none;
-}
-&__fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-&__label {
-  width: 340px;
-  display: block;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
-  color: $dark;
-  &:nth-child(2) {
-    margin-top: 8px;
+    position: relative;
   }
-}
-&__decor {
-  display: none;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  max-width: 120px;
-  height: auto;
-}
-&__input {
-  width: 100%;
-  height: 48px;
-  padding: 10px 15px;
-  color: $dark;
-  border: 1px solid #e2e1e5;
-  border-radius: 2px;
-  &:focus {
+  &__img {
+    display: none;
+  }
+  &__fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__label {
+    width: 340px;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: $dark;
+    &:nth-child(2) {
+      margin-top: 8px;
+    }
+  }
+  &__decor {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 120px;
+    height: auto;
+  }
+  &__input {
+    width: 100%;
+    height: 48px;
+    padding: 10px 15px;
+    color: $dark;
+    border: 1px solid #e2e1e5;
+    border-radius: 2px;
+    &:focus {
       border: none;
       outline: 1px solid $dark;
     }
@@ -137,10 +137,23 @@ position: relative;
     &__form {
       padding-left: 20px;
     }
-  
+    &__decor {
+     
+      animation: moveAndRotate 4s linear infinite;
+    }
   }
 }
-
+@keyframes moveAndRotate {
+  0% {
+    transform: translateY(0%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-100%) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0%) rotate(360deg);
+  }
+}
 
 @media screen and (min-width: 1920px) {
   .touch {
