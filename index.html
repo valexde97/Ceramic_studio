@@ -13,15 +13,19 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/Ceramic_studio/assets/main-Be4xA0YK.js"></script>
-    <link rel="stylesheet" crossorigin href="/Ceramic_studio/assets/main-DcpkrEU0.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <script type="module" crossorigin src="/Ceramic_studio/assets/script-B7kKrO0m.js"></script>
+    <link rel="stylesheet" crossorigin href="/Ceramic_studio/assets/script-CulH17yy.css">
   </head>
   <body>
     <section class="promo">
       <img src="/Ceramic_studio/assets/potter-Dgq44G72.jpg" alt="potter" class="promo__potter" />
       <div class="container">
         <header class="header">
-          <div class="header__menu header__menu_active">
+          <div class="header__menu">
             <div class="header__menu-close">
               <span></span>
               <span></span>
@@ -152,7 +156,7 @@
                 placeholder="Question"
                 required
               ></textarea>
-
+              <div class="error-message"></div>
               <label class="touch__label touch__check-block" for="checkbox">
                 <input
                   required
@@ -162,12 +166,13 @@
                 />
                 I agree with the <a href="#">terms</a></label
               >
+              <div class="checkbox-error-message"></div>
 
               <button class="btn-send touch__btn">send request</button>
             </form>
           </div>
         </div>
-				<img src="/Ceramic_studio/assets/vase-vlRwx0nf.png" alt="vase" class="touch__decor" />
+        <img src="/Ceramic_studio/assets/vase-vlRwx0nf.png" alt="vase" class="animate__animated animate__bounce touch__decor" />
       </div>
     </section>
 
@@ -212,6 +217,7 @@
                 placeholder="Enter your e-mail"
                 type="email"
                 class="footer__input"
+                id="footer__email"
                 required
               />
               <label class="footer__check-block" for="footer__checkbox">
